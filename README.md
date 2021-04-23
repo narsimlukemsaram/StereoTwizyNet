@@ -1,23 +1,6 @@
-# Copyright (c) 2017, NVIDIA CORPORATION.  All rights reserved.
+Architecture Design and Development of an On-board Stereo Vision System with Motion Estimation for Cooperative Automated Vehicles: Developed an on-board stereo vision system to estimate the detected object‘s motion parameters (distance, velocity, azimuth, and elevation angles) in C++ on Ubuntu 16.04 LTS, and it is deployed on Nvidia Drive PX2 embedded hardware platform with a custom-built GMSL stereo camera using Nvidia DriveWorks 1.2, CUDA 9.2, TensorRT 4.0, and cuDNN 7.4.1 libraries, and evaluated on the CARLA Simulator and the Renault Twizy Cooperative Automated Vehicle research platform.
+@This is the implementation of "Architecture Design and Development of an On-board Stereo Vision System for Cooperative Automated Vehicles", Narsimlu Kemsaram, Anweshan Das, Gijs Dubbelman.
 
-@page dwx_samples_building Building DriveWorks Samples
-
- - [Prerequisites](#prerequisites)
- - [Building on Linux Desktop or Linux x86/x64 Only](#building_on_linux)
- - [Cross Compiling for the NVIDIA DRIVE Platform](#cross-compilation)
- - [Loading the Sample on the NVIDIA DRIVE Platform](#load)
- - [Compiling on the Device](#device_compilation)
-
-NVIDIA<sup>&reg;</sup> DriveWorks SDK includes samples that you can use as a starting point for
-developing, porting, and optimizing your applications. These samples are provided
-as source code that you can modify to meet specific use cases, such as
-the use of third-party sensors, custom rendering steps, etc.
-
-You can use the as-delivered sample applications without compiling or loading them.
-If you installed DriveWorks on the target, those sample applications are ready
-to execute.
-
-<a name="prerequisites">
 ## Prerequisites
 
 ### Basic Hardware Requirements
@@ -193,5 +176,9 @@ compiled binaries to a device with IP `DPX_IP` as user `nvidia`.
 
 <a name=device_compilation>
 ## Compiling on the Device
+ 
+## Related Publications
+### What to cite
+If you use this code for your research, please kindly cite:
 
-Currently, it is not possible to compile the samples on the target device.
+@INPROCEEDINGS{9294435,  author={Kemsaram, Narsimlu and Das, Anweshan and Dubbelman, Gijs},  booktitle={2020 IEEE 23rd International Conference on Intelligent Transportation Systems (ITSC)},   title={Architecture Design and Development of an On-board Stereo Vision System for Cooperative Automated Vehicles},   year={2020},  volume={},  number={},  pages={1-8},  doi={10.1109/ITSC45102.2020.9294435}}
